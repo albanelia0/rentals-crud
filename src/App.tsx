@@ -1,12 +1,12 @@
-import './App.css';
-import Rentals from './component/Rentals';
+import './App.css'
+import Rentals from './component/Rentals'
 
-function App() {
+function App () {
   return (
     <div>
-      <Rentals/>
+      <Rentals />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
