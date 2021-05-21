@@ -6,5 +6,5 @@
 
 .title {
   font-weight: 300;
-  color: #646464;
+  color: var(--color-red);
 }
