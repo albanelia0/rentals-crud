@@ -1,0 +1,14 @@
+.wrapper img {
+  display: block;
+  border-radius: 16px;
+  height: 196px;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.desc {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
