@@ -1,0 +1,10 @@
+.header {
+  text-align: inherit;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.title {
+  font-weight: 300;
+  color: #646464;
+}

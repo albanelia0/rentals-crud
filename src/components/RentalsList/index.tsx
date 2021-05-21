@@ -14,9 +14,6 @@ interface RentalsListProps {
 const RentalsList = ({ rentals }: RentalsListProps): JSX.Element => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.header}>
-        <h2>Rentals</h2>
-      </div>
       <section className={styles.rentals}>
         {rentals.map(({ id, title, image, price, desc }) => (
           <Card

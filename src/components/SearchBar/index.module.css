@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   background: #ededed;
-  margin: 5px 20px;
+  margin: 5px 20px 20px;
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
