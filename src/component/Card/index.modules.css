@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 1000px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.card-container img {
+  border-radius: 16px;
+  height: 196px;
+}
+.card-container .title {
+  margin-top: 10px;
+}
+.card-container .desc {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
