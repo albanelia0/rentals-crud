@@ -1,10 +1,10 @@
 import './App.css'
-import Rentals from './component/Rentals'
+import ListPage from './pages/ListPage'
 
-function App () {
+function App (): JSX.Element {
   return (
     <div>
-      <Rentals />
+      <ListPage />
     </div>
   )
 }
