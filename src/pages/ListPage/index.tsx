@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import RentalsList from '../../components/RentalsList'
+import SearchBar from '../../components/SearchBar'
 
 interface ApiListItem {
   id: number
@@ -24,6 +25,7 @@ const ListPage = (): JSX.Element => {
   console.log('rentals', rentals)
   return (
     <div>
+      <SearchBar />
       <RentalsList rentals={rentals} />
     </div>
   )

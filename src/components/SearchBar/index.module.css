@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  background: #ededed;
+  margin: 5px 20px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+.wrapper input {
+  padding: 5px;
+  min-width: 200px;
+  border: none;
+  border-right: 0.5px solid var(--color-gray-light);
+  border-left: 0.5px solid var(--color-gray-light);
+  background: transparent;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.wrapper input:focus {
+  outline: none;
+  box-shadow: none;
+  padding: 15px;
+}
+.createButton {
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  color: var(--color-gray);
+  cursor: pointer;
+}
