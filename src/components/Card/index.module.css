@@ -2,6 +2,7 @@
   display: block;
   border-radius: 16px;
   height: 196px;
+  width: 250px;
 }
 
 .title {
@@ -11,4 +12,15 @@
 .desc {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.contentImg {
+  position: relative;
+}
+
+.pencil {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: var(--color-white);
 }
