@@ -7,9 +7,9 @@ const Header = (): JSX.Element => {
 
   const onClickLogo = (): void => history.push('/')
   return (
-    <div onClick={onClickLogo} className={styles.header}>
+    <header onClick={onClickLogo} className={styles.header}>
       <h2 className={styles.title}>Rentals</h2>
-    </div>
+    </header>
   )
 }
 
