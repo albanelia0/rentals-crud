@@ -1,5 +1,6 @@
 import { useHistory } from 'react-router-dom'
 
+import { createRental } from '../../utils/api-client'
 import RentalForm, { FormData } from '../../components/RentalForm'
 import styles from './index.module.css'
 
@@ -7,12 +8,7 @@ const CreatePage = (): JSX.Element => {
   const history = useHistory()
 
   const handleSubmit = (data: FormData): void => {
-    window
-      .fetch('http://localhost:3030/real-estate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      })
+    createRental(data)
       .then((): void => history.push('/'))
       .catch(console.error)
   }

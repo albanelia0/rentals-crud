@@ -1,40 +1,38 @@
 {
   "real-estate": [
-    { "id": "1",
+    {
+      "id": "1",
       "title": "Entire flat",
       "image": "https://www.aproperties.es/thumb?src=/media/properties/27899/27899_1617964436654.jpg&w=640&h=480",
-      "price": "83",
+      "price": "110",
       "desc": "1 bedroom"
     },
-    { "id": "2",
-      "title": "Entire flat",
-      "image": "https://www.aproperties.es/thumb?src=/media/properties/27899/27899_1617964436654.jpg&w=640&h=480",
-      "price": "93",
-      "desc": "3 bedroom"
+    {
+      "title": "hola",
+      "image": "https://www.armstrongflooring.com/content/dam/armstrongflooring/residential/photo-gallery/RSD7133_F6_1A.jpg",
+      "price": 90,
+      "id": "g8J4FFC"
     },
-    { "id": "3",
-      "title": "Entire flat",
-      "image": "https://www.aproperties.es/thumb?src=/media/properties/27899/27899_1617964436654.jpg&w=640&h=480",
-      "price": "93",
-      "desc": "3 bedroom"
+    {
+      "title": "baratito baratito",
+      "desc": "no seas tacañito",
+      "image": "http://vitrohogar.com.mx/wp-content/uploads/2020/01/onice-amb-950.jpg",
+      "price": 100000,
+      "id": "o5dBffW"
     },
-    { "id": "4",
-      "title": "Entire flat",
-      "image": "https://www.aproperties.es/thumb?src=/media/properties/27899/27899_1617964436654.jpg&w=640&h=480",
-      "price": "83",
-      "desc": "1 bedroom"
+    {
+      "title": "comprame! TT",
+      "desc": "Tacaño xD",
+      "image": "https://static.inmofactory.com/images/inmofactory/documents/1/98199/25679169/342150560.jpg?rule=web_464x348_jpg_70",
+      "price": 18000000,
+      "id": "po4Ax0_"
     },
-    { "id": "5",
-      "title": "Entire flat",
-      "image": "https://www.aproperties.es/thumb?src=/media/properties/27899/27899_1617964436654.jpg&w=640&h=480",
-      "price": "93",
-      "desc": "3 bedroom"
-    },
-    { "id": "6",
-      "title": "Entire flat",
-      "image": "https://www.aproperties.es/thumb?src=/media/properties/27899/27899_1617964436654.jpg&w=640&h=480",
-      "price": "93",
-      "desc": "3 bedroom"
+    {
+      "title": "Probemos",
+      "desc": "lalala",
+      "image": "https://www.armstrongflooring.com/content/dam/armstrongflooring/residential/photo-gallery/RSD7363_K11_1.jpg",
+      "price": 50,
+      "id": "EqCnU9b"
     }
   ]
 }

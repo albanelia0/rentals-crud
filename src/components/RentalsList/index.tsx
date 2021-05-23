@@ -3,7 +3,7 @@ import styles from './index.module.css'
 
 interface RentalsListProps {
   rentals: Array<{
-    id: number
+    id: string
     title: string
     image: string
     price: number

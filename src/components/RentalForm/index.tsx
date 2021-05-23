@@ -5,24 +5,28 @@ export interface FormData {
   title: string
   desc: string
   image: string
-  price: string
+  price: number
 }
 
 interface FormProps {
   onSubmit: (data: FormData) => void
   initialData?: FormData
+  edit?: boolean
+  onDelete?: () => void
 }
 
 const INITIAL_DATA = {
   title: '',
   desc: '',
   image: '',
-  price: ''
+  price: 0
 }
 
 const RentalForm = ({
   onSubmit,
-  initialData = INITIAL_DATA
+  edit,
+  initialData = INITIAL_DATA,
+  onDelete
 }: FormProps): JSX.Element => {
   const [data, setData] = useState<FormData>(initialData)
 
@@ -31,7 +35,7 @@ const RentalForm = ({
     onSubmit(data)
   }
 
-  const handleChange: ChangeEventHandler<HTMLInputElement> = (event) => {
+  const handleChange: ChangeEventHandler<HTMLInputElement> = event => {
     const fieldName = event.currentTarget.name
     const newValue = event.currentTarget.value
     setData(prev => ({
@@ -44,21 +48,46 @@ const RentalForm = ({
     <form className={styles.wrapper} onSubmit={handleSubmit}>
       <div className={styles.content}>
         <label>Title</label>
-        <input name='title' value={data.title} onChange={handleChange} type='text' />
+        <input
+          name='title'
+          value={data.title}
+          onChange={handleChange}
+          type='text'
+        />
       </div>
       <div className={styles.content}>
         <label>description</label>
-        <input name='desc' value={data.desc} onChange={handleChange} type='text' />
+        <input
+          name='desc'
+          value={data.desc}
+          onChange={handleChange}
+          type='text'
+        />
       </div>
       <div className={styles.content}>
         <label>Url image</label>
-        <input name='image' value={data.image} onChange={handleChange} type='text' />
+        <input
+          name='image'
+          value={data.image}
+          onChange={handleChange}
+          type='text'
+        />
       </div>
       <div className={styles.content}>
         <label>price</label>
-        <input name='price' value={data.price} onChange={handleChange} type='text' />
+        <input
+          name='price'
+          value={data.price}
+          onChange={handleChange}
+          type='number'
+        />
       </div>
-      <button type='submit'>Publish</button>
+      <div>
+        <button className={styles.publishButton} type='submit'>
+          Publish
+        </button>
+        {edit === true && <button onClick={onDelete} className={styles.deleteButton}>🗑</button>}
+      </div>
     </form>
   )
 }

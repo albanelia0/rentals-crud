@@ -2,7 +2,7 @@ import styles from './index.module.css'
 import { ReactComponent as Pencil } from './icons/pencil.svg'
 import { useHistory } from 'react-router-dom'
 interface CardProps {
-  id: number
+  id: string
   title: string
   image: string
   price: number
