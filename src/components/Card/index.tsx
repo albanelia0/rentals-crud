@@ -15,10 +15,13 @@ const Card = ({ id, image, title, price, desc }: CardProps): JSX.Element => {
   const handleEdit = (): void => {
     history.push(`/edit/${id}`)
   }
+  const handleDetail = (): void => {
+    history.push(`/detail/${id}`)
+  }
   return (
     <div className={styles.wrapper}>
       <div className={styles.contentImg}>
-        <img alt='article' src={image} />
+        <img onClick={handleDetail} alt='article' src={image} />
         <span onClick={handleEdit} className={styles.pencil}><Pencil /></span>
       </div>
       <div className={styles.title}>{title}</div>
