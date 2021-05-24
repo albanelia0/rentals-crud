@@ -17,7 +17,7 @@ const ListPage = (): JSX.Element => {
 
   return (
     <div>
-      <SearchBar onChange={handleSearchChange} />
+      <SearchBar onChange={handleSearchChange} value={searchQuery} />
       <RentalsList rentals={rentals} searchQuery={searchQuery} />
     </div>
   )

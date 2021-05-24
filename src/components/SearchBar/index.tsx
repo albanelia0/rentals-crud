@@ -3,19 +3,25 @@ import styles from './index.module.css'
 
 interface SearchBarProps {
   onChange: (value: string) => void
+  value: string
 }
 
-const SearchBar = ({ onChange }: SearchBarProps): JSX.Element => {
+const SearchBar = ({ onChange, value }: SearchBarProps): JSX.Element => {
   const history = useHistory()
 
-  const handleOnClick = (): void => {
+  const handleCreateClick = (): void => {
     history.push('/create')
   }
 
   return (
     <div className={styles.wrapper}>
-      <button onClick={handleOnClick} className={styles.createButton}>+</button>
-      <input onChange={e => onChange(e.currentTarget.value)} placeholder='Search by title' />
+      <button onClick={handleCreateClick} className={styles.createButton}>+</button>
+      <input
+        onChange={e => onChange(e.currentTarget.value)}
+        value={value}
+        placeholder='Search by title'
+        type='text'
+      />
       <span>⫉</span>
     </div>
   )
