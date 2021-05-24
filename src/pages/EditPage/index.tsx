@@ -5,6 +5,8 @@ import { useParams } from 'react-router'
 import { deleteRentalById, fetchRentalById, updateRental } from '../../utils/api-client'
 import RentalForm, { FormData } from '../../components/RentalForm'
 
+import styles from './index.module.css'
+
 const EditPage = (): JSX.Element => {
   const [initialData, setInitialData] = useState<FormData | null>(null)
   const { id } = useParams<{ id: string }>()
@@ -33,7 +35,12 @@ const EditPage = (): JSX.Element => {
     <main>
       {initialData === null
         ? null
-        : <RentalForm onDelete={handleDelete} edit initialData={initialData} onSubmit={handleSubmit} />}
+        : (
+          <>
+            <h3 className={styles.title}>Update rental</h3>
+            <RentalForm onDelete={handleDelete} edit initialData={initialData} onSubmit={handleSubmit} />
+          </>
+        )}
     </main>
   )
 }
