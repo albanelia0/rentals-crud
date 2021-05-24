@@ -4,11 +4,11 @@ import styles from './index.module.css'
 
 const Header = (): JSX.Element => {
   const history = useHistory()
+  const handleLogoClick = (): void => history.push('/')
 
-  const onClickLogo = (): void => history.push('/')
   return (
-    <header onClick={onClickLogo} className={styles.header}>
-      <h2 className={styles.title}>Rentals</h2>
+    <header className={styles.header}>
+      <h2 onClick={handleLogoClick} className={styles.logo}>Rentals</h2>
     </header>
   )
 }

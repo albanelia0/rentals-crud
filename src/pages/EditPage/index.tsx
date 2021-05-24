@@ -30,11 +30,11 @@ const EditPage = (): JSX.Element => {
   }
 
   return (
-    <div>
+    <main>
       {initialData === null
         ? null
         : <RentalForm onDelete={handleDelete} edit initialData={initialData} onSubmit={handleSubmit} />}
-    </div>
+    </main>
   )
 }
 

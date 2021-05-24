@@ -24,7 +24,7 @@ const DetailPage = (): JSX.Element => {
     [id]
   )
   return (
-    <div>
+    <main>
       <img className={styles.image} src={dt?.image} alt='rental' />
       <div className={styles.content}>
         <span className={styles.title}>{dt?.title}</span>
@@ -36,7 +36,7 @@ const DetailPage = (): JSX.Element => {
         </div>
         <span>Price: {dt?.price}€</span>
       </div>
-    </div>
+    </main>
   )
 }
 

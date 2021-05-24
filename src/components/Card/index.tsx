@@ -22,7 +22,7 @@ const Card = ({ id, image, title, price, desc }: CardProps): JSX.Element => {
     <div className={styles.wrapper}>
       <div className={styles.contentImg}>
         <img onClick={handleDetail} alt='article' src={image} />
-        <span onClick={handleEdit} className={styles.pencil}><Pencil /></span>
+        <button onClick={handleEdit} className={styles.pencil}><Pencil /></button>
       </div>
       <div className={styles.title}>{title}</div>
       <div className={styles.desc}>{desc}</div>

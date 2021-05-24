@@ -1,4 +1,5 @@
 .wrapper img {
+  cursor: pointer;
   display: block;
   border-radius: 16px;
   height: 196px;
@@ -19,8 +20,18 @@
 }
 
 .pencil {
+  cursor: pointer;
   position: absolute;
   top: 5px;
   right: 5px;
   color: var(--color-white);
+  background: var(--color-primary);
+  border: none;
+  border-radius: 20px;
+  padding: 0;
+  height: 35px;
+  width: 35px;
+}
+.pencil:hover {
+  background: var(--color-black);
 }

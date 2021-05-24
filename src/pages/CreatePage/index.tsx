@@ -13,10 +13,10 @@ const CreatePage = (): JSX.Element => {
       .catch(console.error)
   }
   return (
-    <div>
+    <main>
       <h3 className={styles.title}>Create rental</h3>
       <RentalForm onSubmit={handleSubmit} />
-    </div>
+    </main>
   )
 }
 

@@ -22,7 +22,6 @@ const SearchBar = ({ onChange, value }: SearchBarProps): JSX.Element => {
         placeholder='Search by title'
         type='text'
       />
-      <span>⫉</span>
     </div>
   )
 }

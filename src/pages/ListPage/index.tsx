@@ -16,10 +16,10 @@ const ListPage = (): JSX.Element => {
   const handleSearchChange = (value: string): void => setSearchQuery(value)
 
   return (
-    <div>
+    <main>
       <SearchBar onChange={handleSearchChange} value={searchQuery} />
       <RentalsList rentals={rentals} searchQuery={searchQuery} />
-    </div>
+    </main>
   )
 }
 
