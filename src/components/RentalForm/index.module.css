@@ -31,7 +31,6 @@
 }
 
 .publishButton {
-  cursor: pointer;
   flex-grow: 1;
   border: 1px solid var(--color-primary);
   border-radius: 5px;
@@ -40,9 +39,11 @@
   color: var(--color-gray);
   font-size: 16px;
 }
+
 .publishButton:hover {
- background: var(--color-primary);
- color: var(--color-white);
+  cursor: pointer;
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 .deleteButton {
@@ -56,5 +57,5 @@
   margin-left: 10px;
 }
 .deleteButton:hover {
- background: var(--color-primary);
+  background: var(--color-primary);
 }

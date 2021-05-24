@@ -49,6 +49,7 @@ const RentalForm = ({
       <div className={styles.field}>
         <label htmlFor='RentalForm-title'>Title</label>
         <input
+          required
           id='RentalForm-title'
           name='title'
           value={data.title}
@@ -69,6 +70,7 @@ const RentalForm = ({
       <div className={styles.field}>
         <label htmlFor='RentalForm-image'>Image URL</label>
         <input
+          required
           id='RentalForm-image'
           name='image'
           value={data.image}
@@ -81,6 +83,7 @@ const RentalForm = ({
         <input
           id='RentalForm-price'
           name='price'
+          required
           value={data.price}
           onChange={handleChange}
           type='number'
