@@ -1,36 +1,60 @@
 .wrapper {
-  margin: 0px 40px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
 }
-.content {
+
+.field {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
+  align-items: center;
 }
-.wrapper input {
-  border: 1px solid var(--color-gray-light)
+.field + .field {
+  margin-top: 15px;
+}
+.field label {
+  flex-basis: 40%;
+}
+.field input {
+  flex-grow: 1;
+  border: 1px solid var(--color-gray-light);
+  height: 20px;
+  padding: 5px 10px;
 }
 
-.wrapper .publishButton {
+.actions {
+  margin-top: 55px;
+  display: flex;
+  height: 35px;
+}
+
+.publishButton {
+  cursor: pointer;
+  flex-grow: 1;
   border: 1px solid var(--color-primary);
   border-radius: 5px;
   padding: 5px;
   background: var(--color-white);
   color: var(--color-gray);
-  font-size: 15px;
-  margin-top: 55px;
-  width: 200px;
-  align-self: center;
+  font-size: 16px;
 }
-.wrapper .publishButton:hover {
+.publishButton:hover {
  background: var(--color-primary);
  color: var(--color-white);
 }
 
 .deleteButton {
+  cursor: pointer;
+  flex-shrink: 0;
+  flex-basis: 40px;
+  text-align: center;
   border: 1px solid var(--color-primary);
   border-radius: 5px;
   background: var(--color-white);
   margin-left: 10px;
+}
+.deleteButton:hover {
+ background: var(--color-primary);
 }

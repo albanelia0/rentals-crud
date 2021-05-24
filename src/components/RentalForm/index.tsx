@@ -46,7 +46,7 @@ const RentalForm = ({
 
   return (
     <form className={styles.wrapper} onSubmit={handleSubmit}>
-      <div className={styles.content}>
+      <div className={styles.field}>
         <label htmlFor='RentalForm-title'>Title</label>
         <input
           id='RentalForm-title'
@@ -56,7 +56,7 @@ const RentalForm = ({
           type='text'
         />
       </div>
-      <div className={styles.content}>
+      <div className={styles.field}>
         <label htmlFor='RentalForm-desc'>Description</label>
         <input
           id='RentalForm-desc'
@@ -66,7 +66,7 @@ const RentalForm = ({
           type='text'
         />
       </div>
-      <div className={styles.content}>
+      <div className={styles.field}>
         <label htmlFor='RentalForm-image'>Image URL</label>
         <input
           id='RentalForm-image'
@@ -76,7 +76,7 @@ const RentalForm = ({
           type='text'
         />
       </div>
-      <div className={styles.content}>
+      <div className={styles.field}>
         <label htmlFor='RentalForm-price'>Price</label>
         <input
           id='RentalForm-price'
@@ -86,7 +86,7 @@ const RentalForm = ({
           type='number'
         />
       </div>
-      <div>
+      <div className={styles.actions}>
         <button className={styles.publishButton} type='submit'>
           Publish
         </button>
