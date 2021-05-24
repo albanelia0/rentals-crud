@@ -24,7 +24,7 @@ const INITIAL_DATA = {
 
 const RentalForm = ({
   onSubmit,
-  edit,
+  edit = false,
   initialData = INITIAL_DATA,
   onDelete
 }: FormProps): JSX.Element => {
@@ -32,7 +32,7 @@ const RentalForm = ({
 
   const handleSubmit: FormEventHandler = (event): void => {
     event.preventDefault()
-    onSubmit(data)
+    onSubmit({ ...data, price: Number(data.price) })
   }
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = event => {
@@ -47,8 +47,9 @@ const RentalForm = ({
   return (
     <form className={styles.wrapper} onSubmit={handleSubmit}>
       <div className={styles.content}>
-        <label>Title</label>
+        <label htmlFor='RentalForm-title'>Title</label>
         <input
+          id='RentalForm-title'
           name='title'
           value={data.title}
           onChange={handleChange}
@@ -56,8 +57,9 @@ const RentalForm = ({
         />
       </div>
       <div className={styles.content}>
-        <label>description</label>
+        <label htmlFor='RentalForm-desc'>Description</label>
         <input
+          id='RentalForm-desc'
           name='desc'
           value={data.desc}
           onChange={handleChange}
@@ -65,8 +67,9 @@ const RentalForm = ({
         />
       </div>
       <div className={styles.content}>
-        <label>Url image</label>
+        <label htmlFor='RentalForm-image'>Image URL</label>
         <input
+          id='RentalForm-image'
           name='image'
           value={data.image}
           onChange={handleChange}
@@ -74,8 +77,9 @@ const RentalForm = ({
         />
       </div>
       <div className={styles.content}>
-        <label>price</label>
+        <label htmlFor='RentalForm-price'>Price</label>
         <input
+          id='RentalForm-price'
           name='price'
           value={data.price}
           onChange={handleChange}
@@ -86,7 +90,11 @@ const RentalForm = ({
         <button className={styles.publishButton} type='submit'>
           Publish
         </button>
-        {edit === true && <button onClick={onDelete} className={styles.deleteButton}>🗑</button>}
+        {edit && (
+          <button onClick={onDelete} className={styles.deleteButton} aria-label='Delete'>
+            <span aria-hidden='true'>🗑</span>
+          </button>
+        )}
       </div>
     </form>
   )
