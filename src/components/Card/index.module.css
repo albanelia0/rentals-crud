@@ -13,10 +13,16 @@
 .desc {
   margin-top: 5px;
   margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 250px;
 }
 
 .contentImg {
   position: relative;
+  width: 250px;
 }
 
 .pencil {

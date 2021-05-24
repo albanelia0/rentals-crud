@@ -2,43 +2,44 @@
   "real-estate": [
     {
       "id": "1",
-      "title": "Entire flat",
+      "title": "Entire apartament",
       "image": "https://www.aproperties.es/thumb?src=/media/properties/27899/27899_1617964436654.jpg&w=640&h=480",
       "price": "110",
-      "desc": "1 bedroom"
+      "desc": "10 min walk from Plaza Zamora (Historic Center) 24 hour heating, Super fast WIFI Well connected to the bus and train station (RENFE) In the same street are all the services Rooms with all the comforts, comfortable bed, desk. The bathroom equipped with a bathtub The fully equipped kitchen with all utensils We LIKE to share with clean and respectful people."
     },
     {
-      "title": "hola",
+      "title": "Entire loft hosted by Trinidad",
       "image": "https://www.armstrongflooring.com/content/dam/armstrongflooring/residential/photo-gallery/RSD7133_F6_1A.jpg",
       "price": 90,
-      "id": "g8J4FFC"
+      "id": "g8J4FFC",
+      "desc": "Apartment located 6 minutes walk from the metro station Hospital de Móstoles and the hospital itself. 3 minutes from the Coronel de Palma medical center. Very close to the Mercadona and the Plaza. Very well connected by road and means of transport (metro and bus). It is located in a quiet area. The very cozy house with lots of light and very independent. Very easy to access the house, since it is at street level. Includes appliances such as microwave, mini stereo, refrigerator, oven, vitro."
     },
     {
-      "title": "baratito baratito",
-      "desc": "no seas tacañito",
+      "title": "Entire apartament",
+      "desc": "Apartment located 6 minutes walk from the metro station Hospital de Móstoles and the hospital itself. 3 minutes from the Coronel de Palma medical center. Very close to the Mercadona and the Plaza. Very well connected by road and means of transport (metro and bus). It is located in a quiet area. The very cozy house with lots of light and very independent. Very easy to access the house, since it is at street level. Includes appliances such as microwave, mini stereo, refrigerator, oven, vitro.",
       "image": "http://vitrohogar.com.mx/wp-content/uploads/2020/01/onice-amb-950.jpg",
-      "price": 100000,
+      "price": 100,
       "id": "o5dBffW"
     },
     {
-      "title": "comprame! TT",
-      "desc": "Tacaño xD",
+      "title": "Suite",
+      "desc": "Apartment located 6 minutes walk from the metro station Hospital de Móstoles and the hospital itself. 3 minutes from the Coronel de Palma medical center. Very close to the Mercadona and the Plaza. Very well connected by road and means of transport (metro and bus). It is located in a quiet area. The very cozy house with lots of light and very independent. Very easy to access the house, since it is at street level. Includes appliances such as microwave, mini stereo, refrigerator, oven, vitro.",
       "image": "https://static.inmofactory.com/images/inmofactory/documents/1/98199/25679169/342150560.jpg?rule=web_464x348_jpg_70",
-      "price": 18000000,
+      "price": 180,
       "id": "po4Ax0_"
     },
     {
-      "title": "Probemos",
-      "desc": "lalala",
+      "title": "Oportunidad!",
+      "desc": "Baratito",
       "image": "https://www.armstrongflooring.com/content/dam/armstrongflooring/residential/photo-gallery/RSD7363_K11_1.jpg",
-      "price": 50,
+      "price": 80000,
       "id": "EqCnU9b"
     },
     {
       "title": "baratito y bonito, hola",
-      "desc": "prueba",
+      "desc": "10 min walk from Plaza Zamora (Historic Center) 24 hour heating, Super fast WIFI Well connected to the bus and train station (RENFE) In the same street are all the services Rooms with all the comforts, comfortable bed, desk. The bathroom equipped with a bathtub The fully equipped kitchen with all utensils We LIKE to share with clean and respectful people.",
       "image": "https://www.hola.com/imagenes/decoracion/20191104152634/decorar-pisos-pequenos-falsos-mitos/0-938-780/piso-pequeno1-m.jpg",
-      "price": "1230",
+      "price": 50,
       "id": "z8m-7dV"
     }
   ]
