@@ -2,6 +2,7 @@ import Card from '../Card'
 import styles from './index.module.css'
 
 interface RentalsListProps {
+  searchQuery: string
   rentals: Array<{
     id: string
     title: string
@@ -11,20 +12,24 @@ interface RentalsListProps {
   }>
 }
 
-const RentalsList = ({ rentals }: RentalsListProps): JSX.Element => {
+const RentalsList = ({ searchQuery, rentals }: RentalsListProps): JSX.Element => {
+  const lowerCaseSearchQuery = searchQuery.toLowerCase()
+
   return (
     <div className={styles.wrapper}>
       <section className={styles.rentals}>
-        {rentals.map(({ id, title, image, price, desc }) => (
-          <Card
-            key={id}
-            id={id}
-            title={title}
-            image={image}
-            price={price}
-            desc={desc}
-          />
-        ))}
+        {rentals
+          .filter(({ title }) => title.toLowerCase().includes(lowerCaseSearchQuery))
+          .map(({ id, title, image, price, desc }) =>
+            <Card
+              key={id}
+              id={id}
+              title={title}
+              image={image}
+              price={price}
+              desc={desc}
+            />
+          )}
       </section>
     </div>
   )

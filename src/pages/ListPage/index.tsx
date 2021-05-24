@@ -5,6 +5,7 @@ import SearchBar from '../../components/SearchBar'
 
 const ListPage = (): JSX.Element => {
   const [rentals, setRentals] = useState<ApiRental[]>([])
+  const [searchQuery, setSearchQuery] = useState<string>('')
 
   useEffect(() => {
     fetchRentals()
@@ -12,11 +13,12 @@ const ListPage = (): JSX.Element => {
       .catch(console.error)
   }, [])
 
-  console.log('rentals', rentals)
+  const handleSearchChange = (value: string): void => setSearchQuery(value)
+
   return (
     <div>
-      <SearchBar />
-      <RentalsList rentals={rentals} />
+      <SearchBar onChange={handleSearchChange} />
+      <RentalsList rentals={rentals} searchQuery={searchQuery} />
     </div>
   )
 }
