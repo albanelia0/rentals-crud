@@ -13,9 +13,8 @@
 .desc {
   margin-top: 5px;
   margin-bottom: 5px;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
   width: 250px;
 }

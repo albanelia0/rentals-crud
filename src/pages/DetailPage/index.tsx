@@ -32,7 +32,7 @@ const DetailPage = (): JSX.Element => {
           <label>
             Description:
           </label>
-          <span>{dt?.desc}</span>
+          <span className={styles.description}>{dt?.desc}</span>
         </div>
         <span>Price: {dt?.price}€</span>
       </div>

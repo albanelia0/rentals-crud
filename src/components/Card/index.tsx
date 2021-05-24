@@ -26,7 +26,7 @@ const Card = ({ id, image, title, price, desc }: CardProps): JSX.Element => {
       </div>
       <div className={styles.title}>{title}</div>
       <div className={styles.desc}>{desc}</div>
-      <div><strong data-testid='price'>{price} €</strong> / night</div>
+      <div><strong>{price} €</strong> / night</div>
     </div>
   )
 }
